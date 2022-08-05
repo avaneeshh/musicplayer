@@ -1,0 +1,67 @@
+body{
+    background-color: orange;
+    align-items: center;
+}
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+.song_info{
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flexbox;
+}
+.currently-playing {
+    font-size: 1rem;
+    
+}
+.song-name {
+    font-size: 3rem;
+    text-align: center;
+  }
+   
+.song-artist {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.buttons{
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous,
+.pause,
+.next {
+  padding: 30px;
+  opacity: 0.8;
+
+  transition: opacity .2s;
+}
+.previous:hover,
+.pause:hover,
+.next:hover{
+    opacity:40%;
+}
+.slidercontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seek{
+
+    appearance:initial;
+    height: 5px;
+    background: grey;
+    opacity: 3;
+    -webkit-transition: .2s;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .seek:hover{
+    opacity: 60%;
+  }

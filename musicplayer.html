@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="musicplayer.css">
+    </head>
+    <body>
+        <div class="player">
+            <div class="song_info">
+                <div class="currently-playing"></div>
+                <div class="song-name">Name</div>
+                <div class="song-artist">Artist</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="previous" onclick="prev()">
+                <i class="fa fa-step-backward fa-3x" ></i>
+            </div>
+                <div class="pause" onclick="pausesong()">
+                <i class="fa fa-pause-circle fa-3x"></i>
+            </div>
+                <div class="next" onclick="nextsong()">
+                <i class="fa fa-step-forward fa-3x"></i>
+            </div>
+            </div>
+            <div class="slidercontainer">
+                <div class="currtime">0:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek" onchange="seekTo()">
+                <div class="song-length">0:00</div>
+            </div>
+        </div>
+        <script src="musicplayer.js"></script>
+    </body>
+</html>
